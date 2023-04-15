@@ -22,6 +22,7 @@ body {
 
 .bg-header{
     background-color: #151772;
+    margin-bottom: 10px;
 }
 
 .color-menu{
@@ -60,11 +61,11 @@ body {
     align-items: center;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    width: 600px;
+    width: 500px;
 }
 
 .w-img {
-    width: 600px;
+    width: 500px;
 }
 
 .border-card {
@@ -91,11 +92,12 @@ body {
     background-color: #5c5d7e;
 }
 
-.grid-index{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 1rem;
+.df-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 20px;
 }
 
 /*----fin de index main----*/
@@ -340,15 +342,12 @@ body {
 
 /*----media queries----*/
 @media screen and (min-width: 320px) and (max-width: 600px) {
-    .df-header {
-        flex-direction: column;
-    }
-
-    .df-ul {
-        flex-direction: column;
-    }
+  
 
     .df-prod {
+        flex-direction: column;
+    }
+    .df-card{
         flex-direction: column;
     }
 
